@@ -18,7 +18,6 @@ class App extends Component {
     <Fragment>
       <Switch>
         <Route exact path="/" component={MainPage}/>
-        {/* <Route exact path="/login" component={Login}/> */}
         <Route exact path="/login" component={LoginPage}/>
         <Route exact path="/routes" component={RoutesPage}/>
         <Route exact path="/friends-list" component={FriendsPage}/>

@@ -2,7 +2,7 @@ import React from "react";
 import "assets/css/NotificationsPage.css";
 import CustomLoader from 'components/generic_components/CustomLoader';
 import BurgerMenu from '../generic_components/BurgerMenu';
-
+import NotificationsCache from 'caches/notificationsCache/NotificationsCache.js';
 
 class NotificationsPage extends React.Component {
 
@@ -10,40 +10,21 @@ class NotificationsPage extends React.Component {
     super(props);
   
   this.state = {
-    loading: false, //now, in the future will be false
+    loading: true, //now, in the future will be false
     routes: "",
-    comments:  [{
-      title: "Perhaps...",
-      text: "This is a comment, maybe, may, well..."
-  }]
+    comments:  [{title:"Title2", text:"text2"}]
   };
 }
-  comments = [{
-      title: "Perhaps...",
-      text: "This is a comment, maybe, may, well..."
-  },{
-      title:"Well",
-      text: "This is another comment"
-  }];
   
- // componentDidMount() {
-    //cache.default.getRoutes().then(rutas => {
-   //   this.setState({ loading: false, comments: rutas });
-   // });
-        
- // }
+  componentDidMount() {
+    NotificationsCache.getNotifications().then(nots => {
+      console.log(nots);
+      this.setState({ loading: false, comments: nots });
+    });
+  }
 
-  viewLoaded = comments =>{
-   /* function search(){
-        var value = document.getElementById("myInput").value;
-        routes = routes.filter(item=>
-          item.name.search(value)<0
-        );
-      }
-    */
-
+  viewLoaded = comments => {
     return(
-      
       <div className="bodyRoutes" id="outer-container">
       <main>
           <BurgerMenu 
@@ -54,7 +35,7 @@ class NotificationsPage extends React.Component {
           <header className="bodyHeader"></header>
           <section className="sectionComments">
             <ul className="listComment">
-              {comments.map((item, index)=>{
+              {this.state.comments.map((item, index)=>{
                 return (
                   <li id={"comment"+index} key={index} className="liComment">
                     <div className="sectionComment">
