@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/viade_en2b/static/css/main.49a7298a.chunk.css",
+    "main.js": "/viade_en2b/static/js/main.795bfb10.chunk.js",
+    "main.js.map": "/viade_en2b/static/js/main.795bfb10.chunk.js.map",
+    "runtime-main.js": "/viade_en2b/static/js/runtime-main.d5e88302.js",
+    "runtime-main.js.map": "/viade_en2b/static/js/runtime-main.d5e88302.js.map",
+    "static/css/2.7f55608a.chunk.css": "/viade_en2b/static/css/2.7f55608a.chunk.css",
+    "static/js/2.718e4c35.chunk.js": "/viade_en2b/static/js/2.718e4c35.chunk.js",
+    "static/js/2.718e4c35.chunk.js.map": "/viade_en2b/static/js/2.718e4c35.chunk.js.map",
+    "index.html": "/viade_en2b/index.html",
+    "precache-manifest.991e1fc2a39adcf92bc5e0b76158b7cb.js": "/viade_en2b/precache-manifest.991e1fc2a39adcf92bc5e0b76158b7cb.js",
+    "service-worker.js": "/viade_en2b/service-worker.js",
+    "static/css/2.7f55608a.chunk.css.map": "/viade_en2b/static/css/2.7f55608a.chunk.css.map",
+    "static/css/main.49a7298a.chunk.css.map": "/viade_en2b/static/css/main.49a7298a.chunk.css.map",
+    "static/js/2.718e4c35.chunk.js.LICENSE.txt": "/viade_en2b/static/js/2.718e4c35.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d5e88302.js",
+    "static/css/2.7f55608a.chunk.css",
+    "static/js/2.718e4c35.chunk.js",
+    "static/css/main.49a7298a.chunk.css",
+    "static/js/main.795bfb10.chunk.js"
+  ]
+}
